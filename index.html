@@ -40,8 +40,8 @@
 							### Productor
 
 							> El productor es una aplicación que envía eventos a un broker. Puede ser 
-							la misma aplicación donde ocurre el evento o un itermediario. Por ejemplo, 
-							para sistemas monolítcos y legados, se suele usar Kafka Connect.
+							la misma aplicación donde ocurre el evento o un intermediario. Por ejemplo, 
+							para sistemas monolíticos y legados, se suele usar Kafka Connect.
 							
 							Más adelante vamos a ve [Debezium](https://debezium.io/) para transformar BD en sistemas orientados a 
 							Streaming de Eventos
@@ -207,7 +207,7 @@
 
 							Luego de la llave es importante la decisión de que va en un evento. Tenemos 2 casos principales:
 
-							- El evento afecta a una sóla entidad.
+							- El evento afecta a una sola entidad.
 							- El evento afecta a varias entidades.
 
 						</script>
@@ -217,7 +217,7 @@
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-							### El evento afecta a una sóla entidad
+							### El evento afecta a una sola entidad
 
 							En este caso, debe ir:
 
@@ -249,7 +249,7 @@
 
 							En este caso la recomendación es resistir la tentación de generar un evento pro entidad. 
 							El foco es el evento, no las entidades y la información debe contener todo lo necesario
-							para el evento. El Evento debería tener todo lo soslicitado en el caso de una entidad para todas
+							para el evento. El Evento debería tener todo lo solicitado en el caso de una entidad para todas
 							las entidades.
 
 							> En caso de ser necesario, recordar que kafka es un sistema de Stream en tiempo real. 
